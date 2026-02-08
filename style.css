@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffebf0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#display-gif {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative; /* Necessary for the No button to move */
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+#yes-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#no-button {
+    background-color: #f44336;
+    color: white;
+    position: absolute; /* Allows JS to move it anywhere */
+}
