@@ -1,0 +1,115 @@
+body {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    /* This is a direct link to a romantic pattern */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+                      url('page-background.jpg');
+    background-color: #ffdae0; /* The base pink color */
+    
+    background-size: auto;
+    background-repeat: repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#display-gif {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative; /* Necessary for the No button to move */
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+#yes-button {
+    background-color: #4CAF50;
+    color: white;
+    position:relative;
+}
+
+#no-button {
+    background-color: #f44336;
+    color: white;
+    position: relative; /* Allows JS to move it anywhere */
+}
+
+@media (max-width: 600px) {
+    #display-gif {
+        width: 80%; /* Slightly smaller for mobile */
+    }
+    .container {
+        width: 90%; /* Ensures the pink box doesn't get cut off */
+    }
+    h1 {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* 85% black */
+    z-index: 5; 
+    display: none; /* JavaScript will show this */
+}
+
+#fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20; /* Moves it behind the pink card */
+    pointer-events: none;
+}
+/* This styles the box around your content */
+.container {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 182, 193, 0.7); /* Translucent Pink (70% opacity) */
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Adds a soft glow */
+    backdrop-filter: blur(2px); /* Optional: blurs the background image behind the box */
+    
+    /* Ensures the box stays centered and looks good on mobile */
+    max-width: 90%;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Make sure the text is readable on the pink background */
+h1 {
+    color: #b30047; 
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
