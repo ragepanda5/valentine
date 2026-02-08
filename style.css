@@ -1,11 +1,19 @@
 body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #ffebf0;
+    
+    /* Image settings */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
     font-family: 'Arial', sans-serif;
+}
 }
 
 .container {
