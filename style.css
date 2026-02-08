@@ -43,3 +43,18 @@ button {
     color: white;
     position: absolute; /* Allows JS to move it anywhere */
 }
+@media (max-width: 600px) {
+    #display-gif {
+        width: 200px; /* Slightly smaller for mobile */
+    }
+    
+    h1 {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
